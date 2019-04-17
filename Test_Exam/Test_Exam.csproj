@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58469720-7860-4423-A4CD-2D072E3D7EF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test_Exam</RootNamespace>
+    <AssemblyName>Test_Exam</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.1" />
+    <Reference Include="DevExpress.Data.v18.1" />
+    <Reference Include="DevExpress.Dialogs.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.Printing.v18.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1.Extensions, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLT\BLT_Admin.cs" />
+    <Compile Include="BLT\BLT_Subject.cs" />
+    <Compile Include="BLT\BLT_Class.cs" />
+    <Compile Include="BLT\BLT_Question.cs" />
+    <Compile Include="BLT\BLT_Students.cs" />
+    <Compile Include="DAT\ConnectSQL.cs" />
+    <Compile Include="DAT\DAT_Admin.cs" />
+    <Compile Include="DAT\DAT_Subject.cs" />
+    <Compile Include="DAT\DAT_Class.cs" />
+    <Compile Include="DAT\DAT_Question.cs" />
+    <Compile Include="DAT\DAT_Students.cs" />
+    <Compile Include="GUI\Form Manager\frm_ChangeInfoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_ChangeInfoAdmin.Designer.cs">
+      <DependentUpon>frm_ChangeInfoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_ChangePassword.Designer.cs">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Class.Designer.cs">
+      <DependentUpon>frm_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_EditQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_EditQuestion.Designer.cs">
+      <DependentUpon>frm_EditQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Question.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Question.Designer.cs">
+      <DependentUpon>frm_Question.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_AddQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_AddQuestion.Designer.cs">
+      <DependentUpon>frm_AddQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Students.Designer.cs">
+      <DependentUpon>frm_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Subject.Designer.cs">
+      <DependentUpon>frm_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Toolkit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Manager\frm_Toolkit.Designer.cs">
+      <DependentUpon>frm_Toolkit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form Students\frm_LoadSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form Students\frm_LoadSubject.Designer.cs">
+      <DependentUpon>frm_LoadSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Manager.Designer.cs">
+      <DependentUpon>frm_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_ChooseOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_ChooseOperation.Designer.cs">
+      <DependentUpon>frm_ChooseOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Launching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Launching.Designer.cs">
+      <DependentUpon>frm_Launching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_LoginAdmin.Designer.cs">
+      <DependentUpon>frm_LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_LoginStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_LoginStudents.Designer.cs">
+      <DependentUpon>frm_LoginStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticCustom.cs" />
+    <EmbeddedResource Include="GUI\Form Manager\frm_ChangeInfoAdmin.resx">
+      <DependentUpon>frm_ChangeInfoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Manager\frm_ChangePassword.resx">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Manager\frm_Class.resx">
+      <DependentUpon>frm_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Manager\frm_EditQuestion.resx">
+      <DependentUpon>frm_EditQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Manager\frm_Question.resx">
+      <DependentUpon>frm_Question.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Manager\frm_AddQuestion.resx">
+      <DependentUpon>frm_AddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Manager\frm_Students.resx">
+      <DependentUpon>frm_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Manager\frm_Subject.resx">
+      <DependentUpon>frm_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Manager\frm_Toolkit.resx">
+      <DependentUpon>frm_Toolkit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form Students\frm_LoadSubject.resx">
+      <DependentUpon>frm_LoadSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Manager.resx">
+      <DependentUpon>frm_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_ChooseOperation.resx">
+      <DependentUpon>frm_ChooseOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Launching.resx">
+      <DependentUpon>frm_Launching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_LoginAdmin.resx">
+      <DependentUpon>frm_LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_LoginStudents.resx">
+      <DependentUpon>frm_LoginStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner_Hutech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Support1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_ChooseOperation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_LoginAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_ChangePass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_ListQuestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Backup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_AddTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_ListClass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_ChangePassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_LoadSubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_ChooseSubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Enchance.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
